@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20A535B314D07AAC0097F101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		20A535B914D07AAC0097F101 /* libZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A535B814D07AAC0097F101 /* libZipArchive.m */; };
+		20A535BE14D07AC00097F101 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E8EBDB124F3CD70047C862 /* libz.dylib */; };
+		20A535BF14D07ADD0097F101 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBF8124F3D170047C862 /* ZipArchive.m */; };
+		20A535C014D07ADD0097F101 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE4124F3D030047C862 /* ioapi.c */; };
+		20A535C114D07ADD0097F101 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE7124F3D030047C862 /* mztools.c */; };
+		20A535C214D07ADD0097F101 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBE9124F3D030047C862 /* unzip.c */; };
+		20A535C314D07ADD0097F101 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EBEB124F3D030047C862 /* zip.c */; };
 		AA747D9F0F9514B9006C5449 /* ZipArchive_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ZipArchive_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		C9E8EBDC124F3CD70047C862 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E8EBDB124F3CD70047C862 /* libz.dylib */; };
@@ -24,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20A535B214D07AAC0097F101 /* libZipArchiveLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZipArchiveLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A535B614D07AAC0097F101 /* libZipArchive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libZipArchive-Prefix.pch"; sourceTree = "<group>"; };
+		20A535B714D07AAC0097F101 /* libZipArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libZipArchive.h; sourceTree = "<group>"; };
+		20A535B814D07AAC0097F101 /* libZipArchive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libZipArchive.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* ZipArchive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9E8EBDB124F3CD70047C862 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -42,6 +54,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		20A535AF14D07AAC0097F101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A535BE14D07AC00097F101 /* libz.dylib in Frameworks */,
+				20A535B314D07AAC0097F101 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07C0554694100DB518D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libZipArchive.a */,
+				20A535B214D07AAC0097F101 /* libZipArchiveLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +89,7 @@
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Source */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
+				20A535B414D07AAC0097F101 /* libZipArchive */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -90,6 +113,24 @@
 				C9E8EBE1124F3D030047C862 /* minizip */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		20A535B414D07AAC0097F101 /* libZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				20A535B714D07AAC0097F101 /* libZipArchive.h */,
+				20A535B814D07AAC0097F101 /* libZipArchive.m */,
+				20A535B514D07AAC0097F101 /* Supporting Files */,
+			);
+			path = libZipArchive;
+			sourceTree = "<group>";
+		};
+		20A535B514D07AAC0097F101 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20A535B614D07AAC0097F101 /* libZipArchive-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -120,6 +161,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		20A535B014D07AAC0097F101 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07A0554694100DB518D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +185,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		20A535B114D07AAC0097F101 /* ZipArchiveLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20A535BC14D07AAC0097F101 /* Build configuration list for PBXNativeTarget "ZipArchiveLib" */;
+			buildPhases = (
+				20A535AE14D07AAC0097F101 /* Sources */,
+				20A535AF14D07AAC0097F101 /* Frameworks */,
+				20A535B014D07AAC0097F101 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipArchiveLib;
+			productName = libZipArchive;
+			productReference = 20A535B214D07AAC0097F101 /* libZipArchiveLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		D2AAC07D0554694100DB518D /* ZipArchive */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ZipArchive" */;
@@ -175,11 +240,25 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* ZipArchive */,
+				20A535B114D07AAC0097F101 /* ZipArchiveLib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		20A535AE14D07AAC0097F101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A535BF14D07ADD0097F101 /* ZipArchive.m in Sources */,
+				20A535C014D07ADD0097F101 /* ioapi.c in Sources */,
+				20A535C114D07ADD0097F101 /* mztools.c in Sources */,
+				20A535C214D07ADD0097F101 /* unzip.c in Sources */,
+				20A535C314D07ADD0097F101 /* zip.c in Sources */,
+				20A535B914D07AAC0097F101 /* libZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07B0554694100DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,8 +288,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ZipArchive_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ZipArchive;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -224,8 +305,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ZipArchive_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ZipArchive;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -257,6 +340,51 @@
 			};
 			name = Release;
 		};
+		20A535BA14D07AAC0097F101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/libZipArchive.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libZipArchive/libZipArchive-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		20A535BB14D07AAC0097F101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libZipArchive.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libZipArchive/libZipArchive-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +402,15 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20A535BC14D07AAC0097F101 /* Build configuration list for PBXNativeTarget "ZipArchiveLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20A535BA14D07AAC0097F101 /* Debug */,
+				20A535BB14D07AAC0097F101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

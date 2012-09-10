@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'libZipArchive' target in the 'libZipArchive' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
