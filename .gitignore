@@ -1,3 +1,26 @@
-ZipArchive/build
-*.pbxuser
+# UISpecRunner
+.uispec.app
+Specs/Runner/UISpec
+
+# temp nibs and vim swap
+*~.nib
+*.swp
+
+
+# user-specific XCode stuff
 *.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspectivev3
+*.xcuserdatad
+
+#mac things
+.DS_Store
+
+build
+Build
+
+docs
+Docs
+
+xcuserdata
